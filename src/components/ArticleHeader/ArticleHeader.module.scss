@@ -61,10 +61,15 @@
     font-size: 12px;
     line-height: 15px;
     color: $text-color;
-
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+
+  &__tag__full {
+    overflow: none;
+    white-space: normal;
+    text-overflow: none;
   }
 
   &__tag__light {

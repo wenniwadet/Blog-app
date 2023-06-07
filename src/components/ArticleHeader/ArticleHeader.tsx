@@ -43,6 +43,7 @@ const ArticleHeader: React.FC<ArticleHeaderProps> = ({
 
   const tagClasses = classNames({
     [styles.articleHeader__tag]: true,
+    [styles.articleHeader__tag__full]: !isPreview,
     [styles.articleHeader__tag__light]: !isPreview,
   })
 
