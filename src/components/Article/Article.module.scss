@@ -1,0 +1,53 @@
+@import '../../index.scss';
+
+.article {
+  min-height: 140px;
+  padding: 16px 16px 25px 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 940px;
+
+  &__preview {
+    height: 156px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__btn_container {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__btn__danger {
+    @include button-danger;
+  }
+
+  &__btn__success {
+    @include button-success;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    word-break: break-all;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

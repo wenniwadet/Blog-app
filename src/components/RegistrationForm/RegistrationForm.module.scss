@@ -1,0 +1,38 @@
+@import '../../index.scss';
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  &__agree {
+    padding-top: 8px;
+    display: flex;
+    border-top: 1px solid #e8e8e8;
+    column-gap: 12px;
+    color: #595959;
+  }
+
+  &__agree__error {
+    input + span {
+      background-color: #e21b2541 !important;
+      border: 1px solid #f5222d !important;
+    }
+  }
+
+  &__error {
+    display: block;
+    color: #f5222d;
+    animation: errorMessage 0.4s;
+  }
+}
+
+@keyframes errorMessage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

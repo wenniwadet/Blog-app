@@ -1,0 +1,74 @@
+.formField {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 384px;
+  padding: 45px 32px;
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  color: #262626;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07), 0px 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198),
+    0px 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275), 0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035),
+    0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725),
+    0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  &__submit {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__button {
+    padding: 8px 16px;
+    height: 40px;
+    background-color: #1890ff;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #5da9fa;
+    }
+
+    &:active {
+      background-color: #5da9fa;
+      box-shadow: 0 0 0 1px #ffffff, 0 0 0 5px #91caff;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px #ffffff, 0 0 0 5px #91caff;
+    }
+  }
+
+  &__question {
+    color: #8c8c8c;
+    text-align: center;
+  }
+
+  &__link {
+    color: #1890ff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: none;
+      text-decoration: underline;
+    }
+  }
+}

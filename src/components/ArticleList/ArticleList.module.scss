@@ -1,0 +1,17 @@
+.articleList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 18px;
+
+  &__list {
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__pagination {
+    margin-top: auto;
+  }
+}

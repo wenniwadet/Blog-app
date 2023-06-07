@@ -1,0 +1,137 @@
+@import '../../index.scss';
+
+.articleForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+  }
+
+  &__text {
+    resize: none;
+    padding: 8px 12px;
+    height: 168px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 24px;
+    color: $text-color;
+
+    &:focus {
+      outline: 1px solid $info-color;
+    }
+  }
+
+  &__text__error {
+    outline: 1px solid $danger-color;
+
+    &:focus {
+      outline: 1px solid $danger-color;
+    }
+  }
+
+  &__fields {
+    width: 300px;
+  }
+
+  &__tags {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+  }
+
+  &__btn__add {
+    align-self: center;
+    @include button-info;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px #ffffff, 0 0 0 5px #91caff;
+    }
+  }
+
+  &__btn__delete {
+    align-self: center;
+    @include button-danger;
+    padding: 5px 7px;
+    font-weight: 600;
+    line-height: 1;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px #ffffff, 0 0 0 5px $danger-color;
+    }
+  }
+
+  &__btn__more {
+    align-self: flex-start;
+    @include button-info;
+    border: 1px dashed $info-color;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px #ffffff, 0 0 0 5px #91caff;
+    }
+  }
+
+  &__status {
+    align-self: center;
+    display: inline-block;
+    font-size: 20px;
+    color: $success-color;
+  }
+
+  &__error {
+    color: $danger-color;
+    animation: errorMessage 0.4s;
+  }
+
+  &__send {
+    margin: 0 auto;
+    padding: 8px 16px;
+    width: 300px;
+    height: 40px;
+    background-color: $info-color;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #5da9fa;
+    }
+
+    &:active {
+      background-color: #5da9fa;
+      box-shadow: 0 0 0 1px #ffffff, 0 0 0 5px #91caff;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px #ffffff, 0 0 0 5px #91caff;
+    }
+  }
+}
+
+@keyframes errorMessage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,81 @@
+@import '../../index.scss';
+
+.articleHeader {
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  row-gap: 10px;
+  align-items: start;
+
+  &__title_container {
+    width: 100%;
+    display: flex;
+    column-gap: 13px;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0 !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    font-weight: normal !important;
+    color: $info-color !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__title__full {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  &__btn_like {
+    padding-left: 18px;
+    align-self: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color;
+    text-align: end;
+    background: url('../../assets/img/heart-custom.svg') no-repeat 0% 50%;
+    cursor: pointer;
+  }
+
+  &__btn_like__active {
+    background-image: url('../../assets/img/heart-fill-custom.svg');
+  }
+
+  &__tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    display: inline-block;
+    max-width: 123px;
+    padding: 3px 5px;
+    border: 1px solid $text-color;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 15px;
+    color: $text-color;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__tag__light {
+    color: #808080;
+    border-color: #808080;
+  }
+
+  &__description {
+    font-family: 'Inter';
+    margin: 0 !important;
+    font-size: 13px !important;
+    line-height: 22px !important;
+  }
+}

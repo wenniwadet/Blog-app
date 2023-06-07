@@ -1,0 +1,24 @@
+@import '../../index.scss';
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  &__error {
+    font-size: 14px;
+    line-height: 22px;
+    color: #f5222d;
+    animation: errorMessage 0.4s;
+  }
+}
+
+@keyframes errorMessage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
