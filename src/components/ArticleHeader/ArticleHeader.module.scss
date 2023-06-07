@@ -67,9 +67,9 @@
   }
 
   &__tag__full {
-    overflow: none;
     white-space: normal;
-    text-overflow: none;
+    overflow-wrap: anywhere;
+    max-width: none;
   }
 
   &__tag__light {
