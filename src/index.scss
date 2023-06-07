@@ -1,4 +1,4 @@
-// @import-normalize;
+@import-normalize;
 
 @font-face {
   font-family: 'Inter';
@@ -6,7 +6,6 @@
     url('./assets/fonts/Inter-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -15,7 +14,6 @@
     url('./assets/fonts/Roboto-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -24,7 +22,6 @@
     url('./assets/fonts/Roboto-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 * {
